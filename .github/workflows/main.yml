@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Generate Animal Avatar
+name: CI
 
 # Controls when the workflow will run
 on:
@@ -26,3 +26,5 @@ jobs:
               repo: context.repo.repo,
               body: `![${context.payload.sender.login}](https://aittt.vercel.app/api/animal?seed=${context.payload.sender.login})`
             })
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
