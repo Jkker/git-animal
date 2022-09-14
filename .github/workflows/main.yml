@@ -36,6 +36,9 @@ jobs:
   comment:
     runs-on: ubuntu-latest
     steps:
+      - name: Get info
+        run: |
+          echo "The name of the sender: ${{ github.event.sender.login }}"
       - uses: actions/github-script@v5
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
@@ -46,3 +49,5 @@ jobs:
               repo: context.repo.repo,
               body: github.event.sender.login
             })
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
