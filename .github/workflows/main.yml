@@ -47,7 +47,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: github.event.sender.login
+              body: `![${context.payload.sender.login}](https://aittt.vercel.app/api/animal?seed=${context.payload.sender.login})`
             })
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
