@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/github-script@v5
         with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
+          github-token: ${{secrets.PAT}}
           script: |
             github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -27,5 +27,3 @@ jobs:
               repo: context.repo.repo,
               body: `![${context.payload.sender.login}](https://aittt.vercel.app/api/animal?seed=${context.payload.sender.login})`
             })
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
