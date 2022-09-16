@@ -4,6 +4,7 @@
 > Trust me, it’s kinda NFT; it's just not on a block chain.
 
 ⌛ **Estimated Length**: 25 minutes
+
 👤 **Author**: Jerry Jia
 
 ## Outline
