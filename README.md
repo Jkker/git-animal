@@ -572,3 +572,5 @@ Now check out the comment section to receive your animal avatar 🐱.
 [Git It? How to use Git and Github](https://youtu.be/HkdAHXoRtos)
 
 [What is Command Line Interface (CLI)? | w3schools](https://www.w3schools.com/whatis/whatis_cli.asp)
+
+[roma-lukashik/animal-avatar-generator](https://github.com/roma-lukashik/animal-avatar-generator)
